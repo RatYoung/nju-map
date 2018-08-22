@@ -1,0 +1,37 @@
+<view wx:if="{{isMask}}" class='mask' bindtap="cancelMask">
+	<view class="container">
+    <view class="content">
+        <view class="content-word">
+            <view class="content-move">
+                <view class="world">南大-联创学生领袖奖学金支持项目</view>
+                <view class="world"><text>\n</text></view>
+                <view class="world">总策划</view>
+                    <view class="world">南大智慧众筹</view>
+                    <view class="world"><text>\n</text></view>
+                    <view class="world">程序开发</view>
+                    <view class="world">杨浩然</view>
+                    <view class="world"><text>\n</text></view>
+                    <view class="world">特别鸣谢</view>
+                    <view class="world">南京大学教育发展基金会</view>
+                    <view class="world">南京大学广播台</view>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>
+<view class="page" style="background: url('{{imgCDN}}{{images}}'); background-size: 100% 100%;">
+	<image class="title" src="https://nju-img.oss-cn-hangzhou.aliyuncs.com/03%E6%A0%A1%E6%A0%87%EF%BC%8C%E4%B8%AD%E3%80%81%E8%8B%B1%E6%96%87%E6%A0%A1%E5%90%8D%E7%BB%84%E5%90%88.png"></image>
+    <view class="bd">
+        <navigator class="confirm-btn" url="map/details">
+            <text>{{shortName}}简介</text>
+        </navigator>
+        <navigator class="confirm-btn" url="map/index">
+            <text>逛逛{{shortName}}</text>
+        </navigator>
+		<view bindtap="aboutUs" class="confirm-btn">关于我们</view>
+    </view>
+    <view class="copyright">
+		<image class='logo' src="https://nju-img.oss-cn-hangzhou.aliyuncs.com/%E6%99%BA%E6%85%A7%E4%BC%97%E7%AD%B9logo.png"></image>
+		<text>{{mapCopyright?"数据版权："+mapCopyright.name:""}}</text>
+    </view>
+</view>
